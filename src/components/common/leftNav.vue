@@ -10,33 +10,20 @@
         <router-link to="/Store">
             <li>
                 <i class="icon iconfont icon-dianpu"></i>
-                <div>店铺</div>
+                <div>账单</div>
                 </li>
         </router-link>
-        <router-link to="/Goods">
-            <li>
-                <i class="icon iconfont icon-hanbao"></i>
-                <div>商品</div>
-            </li>
-        </router-link>
-       
         <router-link to="/Vip">
             <li>
                 <i class="icon iconfont icon-huiyuanqia"></i>
                 <div>会员</div>
             </li>            
         </router-link>
-        <router-link to="/Discount">
+        <router-link to="/Setting">
             <li>
                 <i class="icon iconfont icon-shezhi"></i>
-                <div>折扣</div>
+                <div>设置</div>
             </li>
-        </router-link>
-        <router-link to="/Statistical">
-            <li>
-                <i class="icon iconfont icon-shezhi"></i>
-                <div>统计</div>
-            </li>            
         </router-link>
     </ul>
   </div>

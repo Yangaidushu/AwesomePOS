@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-    <!--左侧导航-->
-    
+    <!--左侧导航--> 
         <leftNav></leftNav>
-    
     <!--操作区域-->
     <div class="main">
-      <router-view></router-view>
+      <keep-alive >
+        <router-view v-if="$route.meta.keepAlive"></router-view>
+      </keep-alive>
+      <router-view v-if="!$route.meta.keepAlive"></router-view>
     </div>
   </div>
 </template>

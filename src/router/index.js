@@ -3,9 +3,7 @@ import Router from 'vue-router'
 import Pos from '@/components/page/Pos'
 import Vip from '@/components/page/Vip'
 import Store from '@/components/page/Store'
-import Goods from '@/components/page/Goods'
-import Discount from '@/components/page/Discount' 
-import Statistical from '@/components/page/Statistical' 
+import Setting from '@/components/page/Setting' 
 Vue.use(Router)
 
 export default new Router({
@@ -13,12 +11,15 @@ export default new Router({
     {
       path: '/',
       name: 'Pos',
-      component: Pos
+      component: Pos,
+      meta:{
+        keepAlive:true
+      }
     },
     {
       path:'/Vip',
       name:'Vip',
-      component:Vip
+      component:Vip,
     },
     {
       path:'/Store',
@@ -26,19 +27,9 @@ export default new Router({
       component:Store
     },
     {
-      path:'/Goods',
-      name:'Goods',
-      component:Goods
-    }
-    ,    {
-      path:'/Statistical',
-      name:'Statistical',
-      component:Statistical
-    },
-    {
-      path:'/Discount',
-      name:'Discount',
-      component:Discount
+      path:'/Setting',
+      name:'Setting',
+      component:Setting
     }
   ]
 })
